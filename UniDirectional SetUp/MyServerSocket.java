@@ -8,7 +8,10 @@ public class MyServerSocket {
         try {
             System.out.println("Server is started");
             ServerSocket serSocket = new ServerSocket(9999);
+            System.out.println("Server Socket is created");
+            
             System.out.println("Waiting for connection");
+            
             Socket sock = serSocket.accept();
             System.out.println("Client is connected");
 
